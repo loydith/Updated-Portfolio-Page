@@ -5,17 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Bootstrap</title>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-
-    <!-- Compiled and minified JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-            
-
+    <!-- style CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
-
 </head>
+
 <body>
+
     <!-- header -->
         <nav>
                 <div class="nav-wrapper">
@@ -27,77 +26,95 @@
                   </ul>
                 </div>
         </nav>
-    <!-- Contact form -->
 
+    <!-- Line Action  -->
+    <div class="progress">
+        <div class="indeterminate"></div>
+    </div>
 
-    <section class="container">
+    <!-- Contact section -->
+  <section class="container">
         <div class="card mb-3" style="max-width: 100%">
-            <div class="row no-gutters">    
-           <h1>Contact</h1>
-            <div class="container">
-
-              <form>
-                <div class="form-group">
-                  <label for="exampleInputEmail1">Email address</label>
-                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-                  <small id="emailHelp" class="form-text text-muted"></small>
-                </div>
-                <div class="form-group">
-                  <label for="exampleInputPassword1">Name</label>
-                  <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-                </div>
-                
-                <div class="mb-3">
-                        <label for="validationTextarea">Message</label>
-                        <textarea class="form-control is-invalid" id="validationTextarea"></textarea>
+              <h1 class="card-title">Contact</h1>
+          <div class="row">
+          <div class="col s8" >
+      <!-- Contact form -->  
+              <p>If you would like to contact me, please feel free to fill out this form and send me you request, 
+                I will respond as soon as I received your request.</p>
+        <!-- form  -->
+            <form id="form">
+              
+                <div class="input-field col s8">
+                  <input placeholder="First Name" id="first_name" type="text" class="validate">
+                  <label for="first_name"></label>
                 </div>
 
-                <button type="submit" class="btn btn-primary">Submit</button>
+                <div class="input-field col s8">
+                  <input placeholder="Last Name" id="last_name" type="text" class="validate">
+                  <label for="last_name"></label>
+                </div>
+             
+                <div class="input-field col s8">
+                  <input placeholder="Email Id" id="email" type="email" class="validate">
+                  <label for="email"></label>
+                </div>
+            
+                <div class="input-field col s8">
+                    <textarea placeholder="Message" id="textarea2" class="materialize-textarea" data-length="120" style="height:200px"></textarea>
+                    <label for="textarea2"></label>
+                </div>
 
-              </form>
+                <button class="btn waves-effect waves-light" type="submit" name="emailaddress">Send
+                      <i class="material-icons right">send</i>
+                </button>
+            </form>
+        </div>
 
-            </div>
+        <!-- links for address -->
+        <div class="col s4" >
+              <div class="card blue-light darken-1" id="red">
+                  <h4 class="card-title"><img src="assets/images/home.png" width="40px" alt="40px">Address</h4>
+                  <p> 1409 Macrae Court<br>
+                      Allen TX 75013    
+                  </p> 
+              </div>
+        </div>     
+
+        <!-- links for phone -->
+        <div class="col s4">
+              <div class="card blue-light darken-1" id="orange">
+                  <h4 class="card-title"><img src="assets/images/phone.png" width="40px" alt="40px">Phone</h4>
+                  <p>
+                    +1 804-4775524
+                  </p> 
+              </div>
           </div>
+        
+        <!-- links for email -->
+        <div class="col s4">
+          <div class="card blue-light darken-1" id="blue">
+              <h4 class="card-title"><img src="assets/images/email.png" width="40px" alt="40px"><a href="mailto:loydith@gmail.com">Email</a></h4>
+              <p>
+                <a href="mailto:loydith@gmail.com">loydith@gmail.com</a><br>
+                <a href="https://www.facebook.com/loydith"><img src="assets/images/facebook.png" width="30px" alt="30px"></a>
+                <a href="https://www.linkedin.com/in/loyvaldivia"><img src="assets/images/in.png" width="30px" alt="30px"></a>
+                <a href="https://twitter.com/loydithval"><img src="assets/images/twitter.png" width="30px" alt="30px"></a>
+                <a href="https://www.instagram.com/loy_valdivia/"><img src="assets/images/instagram.png" width="30px" alt="30px"></a>
+              </p> 
+          </div>
+        </div>
+
+      </div>      
     </div>
 </section>
-
-<div class="push"></div>
-</div>
-
-<!-- links for contacts -->
-<div class="container">
-  <div class="row">
-          <div class="col s6">
-            <div class="card blue-light darken-1">
-              <div class="card-content white-text">
-                <span class="card-title">Contacts </span>
-                <p> </p> 
-              </div>
-            </div>
-          </div>
-        </div>
-  </div>       
-  <!-- links for contacts -->
-<div class="container">
-  <div class="row">
-          <div class="col s6">
-            <div class="card blue-light darken-1">
-              <div class="card-content white-text">
-                <span class="card-title">Contacts </span>
-                <p></p> 
-              </div>
-            </div>
-          </div>
-        </div>
-  </div>      
 
      <!-- footer -->
     <footer class="page-footer">   
         <div class="footer-copyright">
           <div class="container">
           © 2019 Copyright Loy
-          <a class="grey-text text-lighten-4 right" href="#!"></a>
-          
+          <div id="logo">
+        </div>
         </div>
     </footer>
   </body>
