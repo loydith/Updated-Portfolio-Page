@@ -3,6 +3,7 @@ var bodyParser = require("body-parser");
 var nodemailer = require("nodemailer");
 var exphbs = require("express-handlebars")
 var path = require("path");
+var PORT = process.env.PORT || 8000;
 var app = express();
 
 //view engine setup handlebars
@@ -80,7 +81,11 @@ app.post("/send", (req, res) => {
             res.render("contact", {msg: "Email has been sent."})
         });
     });
-app.listen(3000, () => console.log("Server started ..."));
+    app.listen(PORT, function() {
+        console.log("Server listening on http://localhost:", PORT);
+      });
+      
+// app.listen(3000, () => console.log("Server started ..."));
 
 
         
