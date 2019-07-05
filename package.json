@@ -1,0 +1,25 @@
+{
+  "name": "updated-portfolio-page",
+  "version": "1.0.0",
+  "description": "Sample app using nodemailer",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/loydith/Updated-Portfolio-Page.git"
+  },
+  "author": "Loydith Valdivia",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/loydith/Updated-Portfolio-Page/issues"
+  },
+  "homepage": "https://github.com/loydith/Updated-Portfolio-Page#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "express-handlebars": "^3.1.0",
+    "nodemailer": "^6.2.1"
+  }
+}
