@@ -52,8 +52,8 @@ app.post("/send", (req, res) => {
           port: 2525,
           secure: false, // true for 465, false for other ports
           auth: {
-            user: "c42ae5fcaabd18", // generated ethereal user
-            pass: "e84c3306df44ce" // generated ethereal password
+            user: "", // generated ethereal user
+            pass: "" // generated ethereal password
           },
           tls:{
               rejectUnauthorized:false
@@ -62,9 +62,9 @@ app.post("/send", (req, res) => {
       
         // send mail with defined transport object
         var mailOptions = {
-          from: '"Nodemailer contact <6bfd725532-a6a53a@inbox.mailtrap.io>', // sender address
-          to: "loydith@gmail.com", // list of receivers
-          cc: "ventas@fatimacamilainn.com",
+          from: '"Nodemailer contact', // sender address
+          to: "", // list of receivers
+          cc: "",
           subject: "Node contact request", // Subject line
           text: "Hello world?", // plain text body
           html: output // html body
