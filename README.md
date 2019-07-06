@@ -24,14 +24,10 @@
 
 ```
 
-
-```
-
 ## Heroku Link ==> https://portfolio-lv.herokuapp.com/
 ----
 
 ```
-----
 
 ```
 
@@ -45,5 +41,4 @@
 * Handlebars
 * Materialize
 
-----
 ```
