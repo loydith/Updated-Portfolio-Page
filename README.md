@@ -21,16 +21,16 @@
 ```
 * localhost:8000 (in browser)
 ```
-
-```
-
-## Heroku Link ==> https://portfolio-lv.herokuapp.com/
 ----
 
 ```
 
 ```
+## Heroku Link ==> https://portfolio-lv.herokuapp.com/
+----
+```
 
+```
 ## Technologies Used
 ----
 ```
@@ -41,4 +41,3 @@
 * Handlebars
 * Materialize
 
-```
