@@ -23,7 +23,7 @@
 ```
 
 ```
-----
+
 
 ```
 
@@ -31,11 +31,14 @@
 ----
 
 ```
+----
 
+```
 
 ## Technologies Used
 ----
 ```
+
 * Node.js & Express
 * 1 new Node Modules
     - nodemailer
