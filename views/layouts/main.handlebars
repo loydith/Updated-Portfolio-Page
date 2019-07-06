@@ -5,33 +5,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>{{ title }}</title>
+    
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+   
     <!-- style CSS -->
     <link rel="stylesheet" href="css/style.css">
+    
+    {{!-- javascript --}}
+    <script src="./public/javascript.js"></script>
 </head>
 <body>
-     <!-- navBar -->
-     
-    <nav>
-                <div class="nav-wrapper">
-                  <a class="brand-logo">Loydith Valdivia</a>
-                  <ul id="nav-mobile" class="left hide-on-med-and-down right">
-                    <li><a href="/">About</a></li>
-                    <li><a href="/portfolio">Portfolio</a></li>
-                    <li><a href="/contact">Contact</a></li>
-                    <!-- <li class="nav-item active"><a class="nav-link" href="/login">Login</a></li> -->
-                  </ul>
-                </div>
-        </nav>
+<!-- navBar -->
+<nav>
+  <div class="nav-wrapper">
+    <a class="brand-logo" id="h2">Loydith Valdivia</a>
+    <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+    <ul class="right hide-on-med-and-down">
+      <li id="line"><a href="/">About</a></li>
+      <li id="line"><a href="/portfolio">Portfolio</a></li>
+      <li id="line1"><a href="/contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+  {{!-- Mobile NavBar --}}
+  <ul class="sidenav" id="mobile-demo">
+    <li><a href="/">About</a></li>
+    <li><a href="/portfolio">Portfolio</a></li>
+    <li><a href="/contact">Contact</a></a></li>
+    <li class="divider"></li>
+    <li><a id="salir" href="#!">Salir</a></li>
+  </ul>
 
-    <!-- Action Line 1-->
+ <!-- Action Line 1-->
     <div class="progress">
-            <div class="indeterminate"></div>
-        </div>
+       <div class="indeterminate"></div>
+    </div>
 
    {{{body}}}
+
+<!-- footer -->
+<footer class="page-footer">   
+  <div class="footer-copyright">
+    <div class="container"> © 2019 Copyright Loy
+      <div id="logo"></div>
+    </div>
+</footer>
+
+
 </body>
 </html>

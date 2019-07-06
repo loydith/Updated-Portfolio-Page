@@ -5,3 +5,11 @@ function validateForm() {
       return false;
     }
   }
+  // navBar with jQuery
+
+  $(document).ready(function(){
+    // $('.slider').slider({full_width: true});
+    $('.sidenav').sidenav();
+    
+    });
+  

@@ -9,6 +9,10 @@ body{
 .nav-wrapper{
     background: #4aaaa5;
 }
+#image{
+    position: relative;
+    right: -150px;
+}
 .page-footer{
     background: #3e618a;
 }
@@ -19,6 +23,26 @@ a:hover {
     color: white;
     background-color: #4aaaa5;
 }
+#nav-mobile a:hover{
+    text-decoration: underline;
+    
+}
+#line{
+    border-right: 1px solid white;
+    padding: 0 50px;
+    position: relative;
+    /* top: -50px; */
+    left: -200px;
+
+}
+#line1{
+   
+    padding: 0 50px;
+    position: relative;
+    /* top: -50px; */
+    left: -200px;
+
+}
 
 /* About Me */
 h1{
@@ -27,6 +51,17 @@ h1{
     color: #4aaaa5;
     border-bottom: 1px solid gray; 
 } 
+#h2{
+    padding: 0;
+    margin: 0;
+    color: white;
+    font-size: 40px;
+    font-weight: normal;
+    padding-top: 10px;
+    position: relative;
+    right: -220px;
+  
+}
 h4{
     color: #4aaaa5;
     font-size: .9em;
@@ -78,6 +113,44 @@ footer{
 text-align: right;
 }
 
+@media only screen and (max-width: 640px) {
+    #image{
+        /* position: relative; */
+        right: 50px;
+        padding-left: 180px;
+        height: 40px;
+        /* margin-top: 100px; */
+    }
+    #summary{
+        margin-top: 350px;
+        left: 50px;
 
+    }
+    h1, p{
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #h2{
+        padding: 0;
+    margin: 0;
+    color: white;
+    font-size: 20px;
+    font-weight: normal;
+    padding-top: 10px;
+    position: relative; 
+    left: 100px;
+    }
+    #image{
+        /* position: relative; */
+        left: -150px;
+        padding-left: 180px;
+        /* margin-top: 100px; */
+    }
+}
+
+@media only screen and (max-width: 980px) {
+}
 
  

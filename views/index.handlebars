@@ -1,69 +1,40 @@
-{{!-- <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Home</title>
-    <!--Import Google Icon Font-->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <!-- Compiled and minified CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <!-- style CSS -->
-    <link rel="stylesheet" href="public/assets/css/style.css">
-</head>
-<body> --}}
-    <!-- navBar -->
-        
 
 <!-- Section -->
- <section class="container">
+<div class="container">
+  <div class="row">
        <h1 class="card-title">About Me</h1>
-<!-- ///////////////// -->
-    <div class="col s6 m7">
-      <div class="card horizontal">
-        <!-- my picture -->
+ <!-- my picture -->
+    <div class="col s4 m6">
          <div class="card-image">
-           <a><img src="/public/images/loyVal.JPG" width="250px" alt="180px"></a>
+           <a id="image"><img src="../images/loyVal.JPG" width="250px" alt="200px"></a>
           </div>
-          <!-- summary -->
-          <!-- <div class="card-stacked"> -->
-            <div class="card-content">
-              <p>Experienced technology professional with strong problem solving, 
-                    negotiation, communication and interpersonal skills and a track records in delivering
-                     value to organizations. Demonstrated team leadership with outstanding staff, time 
-                     and project management skills. Customer focused with diverse industry experience 
-                     including hospitality, retail, mining, education and non-profit. 
-                     Fluent in English and Spanish.
-                </p>
-            </div>
-          </div>
-        <!-- </div> -->
-      </div>
-<!-- //////////////////// -->
-</section>
+    </div>
+
+    {{!-- Text --}}
+<div class="col s8 m6">
+  <div class="card-panel" id="summary">
+    <p>Experienced technology professional with strong problem solving, 
+      negotiation, communication and interpersonal skills and a track records in delivering
+      value to organizations. Demonstrated team leadership with outstanding staff, time 
+      and project management skills. Customer focused with diverse industry experience 
+      including hospitality, retail, mining, education and non-profit. 
+      Fluent in English and Spanish.
+    </p>
+  </div>
+</div>
+    
+  </div>
+</div>
+
 <!-- Action Line 1-->
    <div class="container">
       <h1 class="card-title">Experience</h1>
   </div>
 <!-- start experience -->
 <div class="container">
-    <div class="row">
-            <div class="col s6" id="text-inside">
-              <div class="card blue-light darken-1">
-                  <h1>Methodist University Coding Bootcamp, Dallas, TX				       
-                      Full Stack Developer </h1>
-                  <p>
-                      •	Designed and developed multiple front-end and back-end applications using Javascript, Bootstrap, CSS, HTML, SQL, 
-                      Node.js, Ajax and JQuery, Heroku, Handlebars, Siquelizer.<br>
-                      •	Partnered with other developers in group projects to implement broader solution.<br>
-                      •	Delivered projects within the required timeframe.<br>
-                      <h6>2019 - Present</h6>
-                    </p>
-              </div>
-            </div>
-  <!-- experience 2 -->
-  <div class="col s6" id="text-inside">
+    <div class="row">          
+  <!-- experience 1 -->
+  <div class="col s4" id="text-inside">
       <div class="card blue-light darken-1">
           <h1>FATIMA INN, Tarapoto, Peru	 
               Assistant General Manager (Family Business) </h1>
@@ -77,8 +48,8 @@
             </p>
       </div>
     </div>
-<!-- experience 3 -->
-<div class="col s6" id="text-inside">
+<!-- experience 2 -->
+<div class="col s4" id="text-inside">
     <div class="card blue-light darken-1">
         <h1>KRASAMO, Richardson, TX								          
             Software Tester Engineer </h1>
@@ -92,9 +63,9 @@
     </div>
   </div>
   
-<!-- experience 4 -->
+<!-- experience 3 -->
 
-<div class="col s6" id="text-inside">
+<div class="col s4" id="text-inside">
     <div class="card blue-light darken-1">
         <h1>SAN MARTIN DE PORRES UNIVERSITY, Lima, Peru	       		                                     
             Process Analyst </h1>
@@ -120,7 +91,7 @@
 <!--Education -->
  <div class="container">
     <div class="row">
-            <div class="col s6" id="text-inside">
+            <div class="col s4" id="text-inside">
               <div class="card blue-light darken-1">
                   <h1 class="card-title">Education </h1>
                   <p>• B.S. in Computer and Systems Engineering, Universidad San Martin de Porres, Lima, Peru.<br>
@@ -131,33 +102,32 @@
                     </p>
               </div>
             </div>
-<!-- Marketable skills -->
-            <div class="col s6" id="text-inside">
-                <div class="card blue-light darken-1">
-                    <h1 class="card-title">Marketable Skills</h1>
-                    <p>•	Designed and developed multiple front-end and back-end 
-                      applications using Javascript, Bootstrap, Materialize, 
-                      CSS, HTML, SQL, Node.js, Ajax and JQuery.
-                        <br>
-                        <br>
-                        <br>
-                      </p>
-                </div>
-              </div>
 
+<div class="col s4" id="text-inside">
+  <div class="card blue-light darken-1">
+    <h1>Methodist University Coding Bootcamp, Dallas, TX Full Stack Developer </h1>
+      <p>
+        •	Designed and developed multiple front-end and back-end applications using Javascript, Bootstrap, CSS, HTML, SQL, 
+        Node.js, Ajax and JQuery, Heroku, Handlebars, Siquelizer.<br>
+        •	Partnered with other developers in group projects to implement broader solution.<br>
+        •	Delivered projects within the required timeframe.<br>
+        <h6>2019 - Present</h6>
+      </p>
+  </div>
+</div>
+<!-- Marketable skills -->
+<div class="col s4" id="text-inside">
+ <div class="card blue-light darken-1">
+  <h1 class="card-title">Marketable Skills</h1>
+    <p>•	Designed and developed multiple front-end and back-end 
+      applications using Javascript, Bootstrap, Materialize, 
+      CSS, HTML, SQL, Mongo, Node.js, Ajax, Handlebars and JQuery.
+    <br>
+    <br>
+    <br>
+    </p>
+  </div>
+</div>
     <!-- End -->
           </div>
     </div>             
-
-    <!-- footer -->
-    <footer class="page-footer">   
-            <div class="footer-copyright">
-              <div class="container">
-              © 2019 Copyright Loy
-              <a class="grey-text text-lighten-4 right" href="#!"></a>
-              
-            </div>
-            
-    </footer>
-{{!-- </body>
-</html> --}}
