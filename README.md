@@ -22,15 +22,20 @@
 * localhost:8000 (in browser)
 ```
 
+```
 ----
 
 ```
 
-### Deployed Heroku Link
+## Heroku Link ==> https://portfolio-lv.herokuapp.com/
+----
 
-* https://portfolio-lv.herokuapp.com/
+```
 
-### Technologies Used
+
+## Technologies Used
+----
+```
 * Node.js & Express
 * 1 new Node Modules
     - nodemailer
@@ -38,3 +43,4 @@
 * Materialize
 
 ----
+```
