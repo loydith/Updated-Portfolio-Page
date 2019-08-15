@@ -84,8 +84,6 @@ app.post("/send", (req, res) => {
     app.listen(PORT, function() {
         console.log("Server listening on http://localhost:", PORT);
       });
-      
-// app.listen(3000, () => console.log("Server started ..."));
 
 
         
